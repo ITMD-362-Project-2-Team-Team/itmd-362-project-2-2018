@@ -5,10 +5,10 @@ Project 2 of ITMD 362 at IIT.
 
 ## Team Members:
 
-- [Henry Post](http://henryfbp.me)
-- [John Collins](https://jcollins17.github.io/)
-- [Marika Jasinski](https://marikajasinski.github.io)
 - [Reshma Jabeen](http://reshmajabeen.me)
+- [Marika Jasinski](https://marikajasinski.github.io)
+- [John Collins](https://jcollins17.github.io/)
+- [Henry Post](http://henryfbp.me)
 
 ## Booking System:
 
