@@ -37,7 +37,7 @@ with our site.
 - If we were allowed to use Django, JAX/JSPs/Containers, or some other
   serverside technology, the `.html` pages' data content would NOT be hardcoded,
   but they will be because those are not part of the project.
-  
+
 ## Members' personal thoughts
 
 - Henry Post
@@ -45,6 +45,14 @@ with our site.
     - Very long programming background, history of independant/non-school web and desktop application development.
     - Attention to detail in algorithms, modularity, and reusability.
     - Many languages and technologies known and used.
-  - Weaknesses:
+  - Weaknessess
     - Not normally attentive to visual details.
     - Over-engineering of solutions, get 'carried away'.
+- John Collins
+  - Strengths:
+    - Good at figuring things out.
+    - Has a good eye for detail. (Figuratively speaking, in reality, I have crap eyesight.)
+    - Good sense of humor
+  - Weaknesses:  
+    - tendency to do things a bit late, working on fixing that
+    - tends to do things a bit lazily, not good at figuring out the most elegant solution to problems
