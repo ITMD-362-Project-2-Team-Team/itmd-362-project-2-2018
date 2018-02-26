@@ -48,3 +48,11 @@ with our site.
   - Weaknesses:
     - Not normally attentive to visual details.
     - Over-engineering of solutions, get 'carried away'.
+- Reshma Jabeen
+  - Strengths:
+    - Always eager to learn new things
+    - Learning new languages like Java, HTML, Javascript, and CSS
+    - Speak multiple languages.
+  - Weaknesses:
+    - Work on improving JQuery, and Javascript.
+    - Learn to me more attentive and sharpen my work habits
