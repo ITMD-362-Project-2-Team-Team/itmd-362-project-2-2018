@@ -37,3 +37,14 @@ with our site.
 - If we were allowed to use Django, JAX/JSPs/Containers, or some other
   serverside technology, the `.html` pages' data content would NOT be hardcoded,
   but they will be because those are not part of the project.
+  
+## Members' personal thoughts
+
+- Henry Post
+  - Strengths:
+    - Very long programming background, history of independant/non-school web and desktop application development.
+    - Attention to detail in algorithms, modularity, and reusability.
+    - Many languages and technologies known and used.
+  - Weaknesses:
+    - Not normally attentive to visual details.
+    - Over-engineering of solutions, get 'carried away'.
