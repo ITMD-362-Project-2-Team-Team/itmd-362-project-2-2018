@@ -50,17 +50,17 @@ with our site.
     - Over-engineering of solutions, get 'carried away'.
 - Reshma Jabeen
   - Strengths:
-    - Always eager to learn new things
-    - Learning new languages like Java, HTML, Javascript, and CSS
+    - Always eager to learn new things.
+    - Learning new languages like Java, HTML, Javascript, and CSS.
     - Speak multiple languages.
   - Weaknesses:
-    - Work on improving JQuery, and Javascript.
-    - Learn to me more attentive and sharpen my work habits
+    - Work on improving JQuery and Javascript.
+    - Learn to be more attentive and sharpen my work habits.
 - John Collins
   - Strengths:
     - Good at figuring things out.
     - Has a good eye for detail. (Figuratively speaking, in reality, I have crap eyesight.)
-    - Good sense of humor
+    - Good sense of humor.
   - Weaknesses:  
-    - tendency to do things a bit late, working on fixing that
-    - tends to do things a bit lazily, not good at figuring out the most elegant solution to problems
+    - Tendency to do things a bit late, working on fixing that.
+    - Tend to do things a bit lazily, not good at figuring out the most elegant solution to problems.
