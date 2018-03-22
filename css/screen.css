@@ -1,4 +1,29 @@
-* {
-  color: pink;
-  background-color: black;
+html {
+  background-color: grey;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  display: table-row;
+}
+
+nav ul li {
+  display: table-cell;
+  float: none;
+  width: 1%;
+}
+
+nav a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: lightblue;
+}
+
+nav a:hover {
+  background-color: blue;
 }
