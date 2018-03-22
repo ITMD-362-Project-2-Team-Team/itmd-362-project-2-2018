@@ -6,12 +6,21 @@
    </head>
    <body>
      <form action="" method="GET">
-        <fieldset>
-            <legend> Personal Info: </legend>
-            <label for="name">Username:</label><input type="text" name="username" id="name" required autofocus placeholder="username" pattern="[a-z A-Z]{3,}" title="Please enter more than three characters">
-            <label for="email">Email:</label><input type="text" name="email" required placeholder="your email" pattern="[a-z A-Z]{3,}@[a-z A-Z]{3,}[.]{1}[a-z]{2,}" title="Please enter correct email address">
-            <label for="phone">Phone:</label><input type="tel" name="phone" id="phone" required placeholder="please provide your phone number" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="please enter phone number in this format: #### ### ###">
-        </fieldset>
+       <h2> Personal Info: </h2>
+        <ul>
+          <li>
+            <label for="name">Username:</label>
+            <input type="text" name="username" id="name" required autofocus placeholder="username" pattern="[a-z A-Z]{3,}" title="Please enter more than three characters">
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input type="text" name="email" required placeholder="your email" pattern="[a-z A-Z]{3,}@[a-z A-Z]{3,}[.]{1}[a-z]{2,}" title="Please enter correct email address">
+          </li>
+          <li>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" required placeholder="please provide your phone number" pattern="[0-9]{7,}" title="please enter phone number in this format: #### ### ###">
+          </li>
+        </ul>
         <fieldset>
            <legend> Booking Details: </legend>
            <label for="date">Booking date: </label><input id="date" type="date" name="date" min="2018-22-03">
