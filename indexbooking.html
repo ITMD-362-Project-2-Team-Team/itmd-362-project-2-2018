@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Ticket Booking System</title>
+   </head>
+   <body>
+     <form action="" method="GET">
+        <fieldset>
+            <legend> Personal Info: </legend>
+            <label for="name">Username:</label><input type="text" name="username" id="name" required autofocus placeholder="username" pattern="[a-z A-Z]{3,}" title="Please enter more than three characters">
+            <label for="email">Email:</label><input type="text" name="email" required placeholder="your email" pattern="[a-z A-Z]{3,}@[a-z A-Z]{3,}[.]{1}[a-z]{2,}" title="Please enter correct email address">
+            <label for="phone">Phone:</label><input type="tel" name="phone" id="phone" required placeholder="please provide your phone number" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="please enter phone number in this format: #### ### ###">
+        </fieldset>
+        <fieldset>
+           <legend> Booking Details: </legend>
+           <label for="date">Booking date: </label><input id="date" type="date" name="date" min="2018-22-03">
+           <label for="numberOfGuest">Number of Guests: </label><input id="numberOfGuests" type="number" name="numberOfGuest" min="1" max="6">
+            <p>Do you need meals?></p>
+            <label for="yesMeals">Yes:</label><input id="yesMeals" type="radio" name="meals" value="yesMeals">
+            <label for="noMeals">No:</label><input id="noMeals" type="radio" name="meals" value="noMeals">
+            <label for="balcony">Do you need Balcony seating?</label><input id="balcony" type="checkbox" name="balcony" value="yes" checked>
+            <input type="image" src="image/button.png">
+
+        </fieldset>
+      </form>
+
+</html>
