@@ -67,6 +67,12 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 1.777em; /* 31.984 / 18 = 1.777 */
+  line-height: 1.032em; /* 33 / 31.984 = 1.032 */
+  padding-bottom: 0.325em;
+}
+
 nav ul li {
   width: 100%;
   float: left;
