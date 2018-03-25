@@ -87,6 +87,35 @@ nav a:hover {
   background-color: red;
 }
 
+#movie-list {
+  display: grid;
+}
+
+#movie-list h2 {
+  
+}
+
+#movie-list img {
+  height: 30vh;
+  width: 30vw;
+  overflow: hidden;
+  object-fit:  cover;
+}
+
+#movie-list article {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr auto;
+}
+
+#movie-list aside {
+  grid-column: 2;
+  grid-row: 1;
+  grid-row-end: span 2;
+}
+
+
+
 @media screen and (min-width: 640px) {
   nav ul li {
     display: table-cell;
