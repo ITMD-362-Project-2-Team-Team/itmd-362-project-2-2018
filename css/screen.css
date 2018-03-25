@@ -1,29 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Modular Styles */
+
 html {
-  background-color: grey;
+  font-size: 1.125em;  /* 18px / 16pt = 1.125 */
+  line-height: 1.222em;  /* 22pt / 18em = 1.2~ */
 }
 
 h1 {
+  font-size: 2.369em; /* 42.635 / 18 = 2.369 */
+  line-height: 1.032em; /* 44 / 42.635 = 1.032 */
+  padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
   width: 100%;
   text-align: center;
 }
 
-nav ul {
-  display: table-row;
+h2 {
+  font-size: 1.777em; /* 31.984 / 18 = 1.777 */
+  line-height: 1.032em; /* 33 / 31.984 = 1.032 */
+  padding-bottom: 0.325em;
 }
 
 nav ul li {
-  display: table-cell;
-  float: none;
-  width: 1%;
+  width: 100%;
+  float: left;
+  padding: 0;
 }
 
 nav a {
   width: 100%;
+  padding-top: 0.6111rem;
+  padding-bottom: 0.6111rem;
+  font-size: 1.375rem;
   display: block;
   text-align: center;
   background-color: lightblue;
 }
 
 nav a:hover {
-  background-color: blue;
+  background-color: red;
+}
+
+#movie-list {
+  display: grid;
+}
+
+#movie-list h2 {
+  
+}
+
+#movie-list img {
+  height: 30vh;
+  width: 30vw;
+  overflow: hidden;
+  object-fit:  cover;
+}
+
+#movie-list article {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr auto;
+}
+
+#movie-list aside {
+  grid-column: 2;
+  grid-row: 1;
+  grid-row-end: span 2;
+}
+
+
+
+@media screen and (min-width: 640px) {
+  nav ul li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+  }
+  
 }
