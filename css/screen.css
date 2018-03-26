@@ -134,3 +134,13 @@ nav a:hover {
   }
   
 }
+
+@media screen and (min-width: 1200px) {
+  #movie-list article:nth-of-type(2n) {
+    grid-row: 2;
+  }
+
+  #movie-list article:nth-of-type(2n+1) {
+    grid-row: 1;
+  }
+}
