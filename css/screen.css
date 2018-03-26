@@ -71,6 +71,7 @@ h2 {
   font-size: 1.777em; /* 31.984 / 18 = 1.777 */
   line-height: 1.032em; /* 33 / 31.984 = 1.032 */
   padding-bottom: 0.325em;
+  text-align:  center;
 }
 
 nav ul li {
@@ -100,7 +101,6 @@ nav a:hover {
 #movie-list h2 {
   grid-column: 1;
   grid-row: 1;
-  grid-column-end: span 2;
 }
 
 #movie-list img {
@@ -108,6 +108,8 @@ nav a:hover {
   width: 30vw;
   overflow: hidden;
   object-fit: cover;
+  grid-row: 2;
+  grid-column:  1;
 }
 
 #movie-list article {
