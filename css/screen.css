@@ -114,8 +114,8 @@ nav a:hover {
 
 #movie-list article {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr 99fr;
+  grid-template-rows: auto;
 }
 
 
