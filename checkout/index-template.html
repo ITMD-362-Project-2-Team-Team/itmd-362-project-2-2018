@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/css/screen.css"/>
+    <link rel="stylesheet" href="//basehold.it/22"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<nav>
+    <h1>Welcome to Not AMC Theaters!</h1>
+    <ul>
+        <li>
+            <a href="/">Movies</a>
+        </li>
+        <li>
+            <a href="/theaters/">Theaters</a>
+        </li>
+        <li>
+            <a href="/login/">Login</a>
+        </li>
+        <li>
+            <a href="/checkout/">Checkout</a>
+        </li>
+    </ul>
+</nav>
+<form action="book.jsp" method="GET">
+    <ul>
+        <li>
+            <label for="name">Username</label>
+            <input type="text" name="username" id="name"/>
+        </li>
+        <li>
+            <label for="email">Email</label>
+            <input type="text" name="email"/>
+        </li>
+        <li>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone"/>
+        </li>
+        <li>
+            <label for="date">Booking date</label>
+            <input id="date" type="date" name="date"/>
+        </li>
+        <li>
+            <label for="guests">Guests</label>
+            <input id="guests" type="number" name="guests"/>
+        </li>
+        <!-- SEATS-BEGIN -->
+        <!-- SEATS-END -->
+    </ul>
+</form>
+<section>
+	<p>Your selected seats:</p>
+	<input type="text" id="selected-seats"/>
+</section>
+
+</html>

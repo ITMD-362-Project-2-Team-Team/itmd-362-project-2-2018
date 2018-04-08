@@ -124,7 +124,32 @@ nav a:hover {
   grid-row: 2;
 }
 
+#seats {
+  text-align: center
+}
 
+li#seats > ul {
+  display: flex;
+}
+
+li#seats > ul > li {
+  width: 100%;
+}
+
+#seats input[type="checkbox"] {
+  width: 1.222rem;
+  height: 1.222rem;
+  color: lightblue;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+#seats input[type="checkbox"]:checked {
+    background-color: red;
+}
 
 @media screen and (min-width: 640px) {
   nav ul li {
@@ -133,4 +158,14 @@ nav a:hover {
     float: none;
   }
   
+}
+
+@media screen and (min-width: 1200px) {
+  #movie-list article:nth-of-type(2n) {
+    grid-row: 2;
+  }
+
+  #movie-list article:nth-of-type(2n+1) {
+    grid-row: 1;
+  }
 }
