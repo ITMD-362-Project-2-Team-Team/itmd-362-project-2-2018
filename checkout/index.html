@@ -1,52 +1,175 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Checkout</title>
-    <link rel="stylesheet" href="/css/screen.css" />
-    <link rel="stylesheet" href="//basehold.it/22" />
-   </head>
-   <body>
-     <nav>
-       <h1>Welcome to Not AMC Theaters!</h1>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Checkout
+  </title>
+  <link href="/css/screen.css" rel="stylesheet"/>
+  <link href="//basehold.it/22" rel="stylesheet"/>
+ </head>
+ <body>
+  <nav>
+   <h1>
+    Welcome to Not AMC Theaters!
+   </h1>
+   <ul>
+    <li>
+     <a href="/">
+      Movies
+     </a>
+    </li>
+    <li>
+     <a href="/theaters/">
+      Theaters
+     </a>
+    </li>
+    <li>
+     <a href="/login/">
+      Login
+     </a>
+    </li>
+    <li>
+     <a href="/checkout/">
+      Checkout
+     </a>
+    </li>
+   </ul>
+  </nav>
+  <form action="book.jsp" method="GET">
+   <ul>
+    <li>
+     <label for="name">
+      Username
+     </label>
+     <input id="name" name="username" type="text"/>
+    </li>
+    <li>
+     <label for="email">
+      Email
+     </label>
+     <input name="email" type="text"/>
+    </li>
+    <li>
+     <label for="phone">
+      Phone
+     </label>
+     <input id="phone" name="phone" type="tel"/>
+    </li>
+    <li>
+     <label for="date">
+      Booking date
+     </label>
+     <input id="date" name="date" type="date"/>
+    </li>
+    <li>
+     <label for="guests">
+      Guests
+     </label>
+     <input id="guests" name="guests" type="number"/>
+    </li>
+    <!-- SEATS-BEGIN -->
+    <li id="seats">
+     <ul>
+      <li id="row-1">
        <ul>
-         <li>
-           <a href="/">Movies</a>
-         </li>
-         <li>
-           <a href="/theaters/">Theaters</a>
-         </li>
-         <li>
-           <a href="/login/">Login</a>
-         </li>
-         <li>
-           <a href="/checkout/">Checkout</a>
-         </li>
+        <li>
+         <input name="A1" type="checkbox"/>
+        </li>
+        <li>
+         <input name="B1" type="checkbox"/>
+        </li>
+        <li>
+         <input name="C1" type="checkbox"/>
+        </li>
+        <li>
+         <input name="D1" type="checkbox"/>
+        </li>
+        <li>
+         <input name="E1" type="checkbox"/>
+        </li>
        </ul>
-     </nav>
-     <form action="book.jsp" method="GET">
-        <ul>
-          <li>
-            <label for="name">Username</label>
-            <input type="text" name="username" id="name"/>
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="text" name="email" />
-          </li>
-          <li>
-            <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone" />
-          </li>
-          <li>
-            <label for="date">Booking date</label>
-            <input id="date" type="date" name="date" />         
-          </li>
-          <li>
-            <label for="guests">Guests</label>
-            <input id="guests" type="number" name="guests" />
-          </li>
-        </ul>
-      </form>
-
+      </li>
+      <li id="row-2">
+       <ul>
+        <li>
+         <input name="A2" type="checkbox"/>
+        </li>
+        <li>
+         <input name="B2" type="checkbox"/>
+        </li>
+        <li>
+         <input name="C2" type="checkbox"/>
+        </li>
+        <li>
+         <input name="D2" type="checkbox"/>
+        </li>
+        <li>
+         <input name="E2" type="checkbox"/>
+        </li>
+       </ul>
+      </li>
+      <li id="row-3">
+       <ul>
+        <li>
+         <input name="A3" type="checkbox"/>
+        </li>
+        <li>
+         <input name="B3" type="checkbox"/>
+        </li>
+        <li>
+         <input name="C3" type="checkbox"/>
+        </li>
+        <li>
+         <input name="D3" type="checkbox"/>
+        </li>
+        <li>
+         <input name="E3" type="checkbox"/>
+        </li>
+       </ul>
+      </li>
+      <li id="row-4">
+       <ul>
+        <li>
+         <input name="A4" type="checkbox"/>
+        </li>
+        <li>
+         <input name="B4" type="checkbox"/>
+        </li>
+        <li>
+         <input name="C4" type="checkbox"/>
+        </li>
+        <li>
+         <input name="D4" type="checkbox"/>
+        </li>
+        <li>
+         <input name="E4" type="checkbox"/>
+        </li>
+       </ul>
+      </li>
+      <li id="row-5">
+       <ul>
+        <li>
+         <input name="A5" type="checkbox"/>
+        </li>
+        <li>
+         <input name="B5" type="checkbox"/>
+        </li>
+        <li>
+         <input name="C5" type="checkbox"/>
+        </li>
+        <li>
+         <input name="D5" type="checkbox"/>
+        </li>
+        <li>
+         <input name="E5" type="checkbox"/>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <!-- SEATS-END -->
+   </ul>
+  </form>
+ </body>
 </html>
