@@ -102,6 +102,10 @@ nav a:hover {
   display: grid;
 }
 
+#theater-list {
+  display: grid;
+}
+
 #movie-list h2 {
   grid-column: 1;
   grid-row: 1;
@@ -171,5 +175,13 @@ li#seats > ul > li {
 
   #movie-list article:nth-of-type(2n+1) {
     grid-row: 1;
+
+  }
+	#theater-list article:nth-of-type(2n) {
+    grid-column: 2;
+	}
+	#theater-list article:nth-of-type(2n+1) {
+    grid-column: 1;
+
   }
 }
