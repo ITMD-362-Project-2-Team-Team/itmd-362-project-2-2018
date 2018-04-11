@@ -27,11 +27,6 @@
      </a>
     </li>
     <li>
-     <a href="/login/">
-      Login
-     </a>
-    </li>
-    <li>
      <a href="/checkout/">
       Checkout
      </a>
@@ -50,7 +45,7 @@
      <label for="email">
       Email
      </label>
-     <input name="email" type="text"/>
+     <input id="email" name="email" type="text"/>
     </li>
     <li>
      <label for="phone">
@@ -171,34 +166,34 @@
      </ul>
     </li>
     <!-- SEATS-END -->
+    <li>
+     <label for="card">
+      Credit Card
+     </label>
+     <input id="card" name="card" placeholder="1234 5678 9123 4567" type="text"/>
+    </li>
+    <li>
+     <label for="cardname">
+      Name on Card
+     </label>
+     <input id="cardname" name="cardname" placeholder="Mary Kate" type="text"/>
+    </li>
+    <li>
+     <label for="carddate">
+      Expiration Date
+     </label>
+     <input id="carddate" name="carddate" type="text"/>
+    </li>
+    <li>
+     <label for="code">
+      Security Code
+     </label>
+     <input id="code" name="code" placeholder="123" type="text"/>
+    </li>
+    <li>
+     <input id="submit" type="submit" value="submit"/>
+    </li>
    </ul>
-   <li id="creditCard">
-    <label for="card">
-     Credit Card
-    </label>
-    <input id="card" name="card" placeholder="1234 5678 9123 4567" type="text"/>
-   </li>
-   <li id="nameOnCard">
-    <label for="nOCard">
-     Name on Card
-    </label>
-    <input id="nCard" name="nCard" placeholder="Mary Kate" type="text"/>
-   </li>
-   <li id="expDate">
-    <label for="date">
-     Expiration Date
-    </label>
-    <input id="date" name="date" type="text"/>
-   </li>
-   <li id="secCode">
-    <label for="code">
-     Security Code
-    </label>
-    <input id="code" name="code" placeholder="123" type="text"/>
-   </li>
-   <li id="submitButton">
-    <input id="submit" type="submit" value="submit"/>
-   </li>
   </form>
   <section>
    <p>
@@ -206,5 +201,7 @@
    </p>
    <input id="selected-seats" type="text"/>
   </section>
+  <script src="/js/seat_selection.js">
+  </script>
  </body>
 </html>

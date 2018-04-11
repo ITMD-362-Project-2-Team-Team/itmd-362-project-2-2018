@@ -100,6 +100,17 @@ nav a:hover {
   background-color: red;
 }
 
+/* fix input padding */
+input {
+  box-sizing: border-box; /* ensure padding subtracts from width */
+  width: 100%;
+  border: 0;
+  line-height: 1;
+  padding: 0.7222rem; /* {[44px(2*lineheight) - 18px(font)]px / 18} aka 13/18 = 0.72~ */
+  background-color: #e8e8e8;
+}
+
+
 #movie-list {
   display: grid;
 }
@@ -136,6 +147,8 @@ nav a:hover {
 
 #seats {
   text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 li#seats > ul {
@@ -206,6 +219,20 @@ html{
     width: 1%;
     float: none;
   }
+  
+  form > * {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+form li:nth-child(2n + 1) { /* every odd one*/
+  grid-column: 1;
+}
+form li:nth-child(2n) { /* every even one*/
+  grid-column: 2;
+}
+
 
 }
 
