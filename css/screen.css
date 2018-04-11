@@ -67,6 +67,7 @@ h1 {
   font-size: 2.369em; /* 42.635 / 18 = 2.369 */
   line-height: 1.032em; /* 44 / 42.635 = 1.032 */
   padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
+	padding-top: 0.516em; /* 22 / 42.635 = 0.516 */
   width: 100%;
   text-align: center;
 }
@@ -75,6 +76,7 @@ h2 {
   font-size: 1.777em; /* 31.984 / 18 = 1.777 */
   line-height: 1.032em; /* 33 / 31.984 = 1.032 */
   padding-bottom: 0.325em;
+	padding-top: 0.325em;
   text-align:  center;
 }
 
@@ -91,7 +93,7 @@ nav a {
   font-size: 1.375rem;
   display: block;
   text-align: center;
-  background-color: lightblue;
+  background-color: orange;
 }
 
 nav a:hover {
@@ -171,6 +173,45 @@ li#seats > ul > li {
 #seats input[type="checkbox"]:checked {
     background-color: red;
 }
+
+/*CSS debug section*/
+
+nav{
+	background-color:Red;
+}
+ul{
+	background-color:Green;
+}
+li{
+	background-color:Lime;
+}
+h1{
+  background-color:MidnightBlue;
+}
+h2{
+	background-color:Navy;
+}
+h3{
+	background-color:MediumBlue;
+}
+h4{
+	background-color:Blue;
+}
+h5{
+	background-color:RoyalBlue;
+}
+h6{
+	background-color:CornflowerBlue;
+}
+a{
+	background-color:gray;
+}
+html{
+	background-color:yellow;
+}
+/*End of debug*/
+
+/*media queries*/
 
 @media screen and (min-width: 640px) {
   nav ul li {
