@@ -42,7 +42,7 @@
    </h2>
    <form action="book.jsp" method="GET">
     <ul>
-     <li id="userInformationTitle">
+     <li class="center">
       <h2>
        User Information
       </h2>
@@ -71,16 +71,16 @@
       </label>
       <input id="date" name="date" type="date"/>
      </li>
-     <li id="theaterInfoTitle">
+     <li class="center">
       <h2>
        Booking Information
       </h2>
      </li>
-     <li id="ListItemMovieSelector">
-      <label for="movieSelection">
+     <li>
+      <label for="movie">
        Movies
       </label>
-      <select id="MovieSelector" name="movieSelection">
+      <select id="movie" name="movie">
        <option selected="" value="null">
        </option>
        <option value="Moo">
@@ -94,11 +94,11 @@
        </option>
       </select>
      </li>
-     <li id="TimeSelector">
-      <label for="MovieTimeSelector">
+     <li>
+      <label for="time">
        Showtimes
       </label>
-      <select id="MovieTimeSelector" name="MovieTimeSelector">
+      <select id="time" name="time">
        <option selected="" value="null">
        </option>
        <option value="time1">
@@ -115,83 +115,13 @@
        </option>
       </select>
      </li>
-     <!--<li id="theaterSelector">
-            <label for="theaterSelection">Theater</label>
-            <select id="theaterSelection" name="theaterSelection" required>
-              <option value=null selected></option>
-              <option value="lakeTheater">Lake Theater</option>
-              <option value="navyPierIMAX">Navy Pier IMAX</option>
-            </select>
-        </li>
-        <li id="lakeTheaterMovieSelector">
-            <label for="movieSelectionLakeTheater">Movies at Lake Theater</label>
-            <select id="LakeTheaterMovieSelector" name="movieSelectionLakeTheater">
-              <option value=null selected></option>
-              <option value="Moo">Moo!</option>
-              <option value="Blart">Paul Blart Flesh Mall</option>
-            </select>
-        </li>
-        <li id="IMAXMovieSelector">
-            <label for="IMAXMovies">Movies at Navy Pier IMAX</label>
-            <select id="IMAXMovieSelector" name="IMAXMovies">
-              <option value=null selected></option>
-              <option value="Moo">Moo!</option>
-              <option value="Leg">I am Leg</option>
-            </select>
-        </li>
-        <li id="MooLakeTimeSelector">
-            <label for="MooLakeSelector">Showtimes for Moo!</label>
-            <select id="MooLakeTimeSelector" name="MooLakeSelector">
-              <option value=null selected></option>
-              <option value="time1">12:45 PM</option>
-              <option value="time2">2:00 PM</option>
-              <option value="time3">4:30 PM</option>
-              <option value="time4">7:00 PM</option>
-            </select>
-        </li>
-        <li id="MooIMAXTimeSelector">
-            <label for="MooIMAXSelector">Showtimes for Moo!</label>
-            <select id="MooIMAXTimeSelector" name="MooIMAXSelector">
-              <option value=null selected></option>
-              <option value="time1">11:00 AM</option>
-              <option value="time2">1:00 PM</option>
-              <option value="time3">3:30 PM</option>
-              <option value="time4">7:00 PM</option>
-            </select>
-        </li>
-        <li id="BlartLakeTimeSelector">
-            <label for="BlartLakeSelector">Showtimes for Paul Blart Flesh Mall</label>
-            <select id="BlartTimeSelector" name="BlartLakeSelector">
-              <option value=null selected></option>
-              <option value="time1">12:30 PM</option>
-              <option value="time2">2:30 PM</option>
-              <option value="time3">5:30 PM</option>
-              <option value="time4">8:30 PM</option>
-            </select>
-        </li>
-        <li id="LegIMAXTimeSelector">
-            <label for="LegIMAXSelector">Showtimes for I am Leg</label>
-            <select id="LegTimeSelector" name="LegIMAXSelector">
-              <option value=null selected></option>
-              <option value="time1">10:30 AM</option>
-              <option value="time2">12:30 PM</option>
-              <option value="time3">4:00 PM</option>
-              <option value="time4">8:00 PM</option>
-            </select>
-        </li>-->
-     <!--
-        <li>
-            <label for="guests">Guests</label>
-            <input id="guests" type="number" name="guests"/>
-        </li>
-      -->
-     <li id="seatSectionTitle">
+     <li class="center">
       <h2>
        Select your desired seats
       </h2>
      </li>
      <!-- SEATS-BEGIN -->
-     <li id="seats">
+     <li class="center" id="seats">
       <ul>
        <li id="row-1">
         <ul>
@@ -295,7 +225,7 @@
       <label>
        Your selected seats:
       </label>
-      <input disabled="" id="selected-seats" text-align="center" type="text"/>
+      <input disabled="" id="selected-seats" type="text"/>
      </li>
      <li>
       <label for="price">
@@ -303,7 +233,7 @@
       </label>
       <input disabled="" id="price" name="price" type="text"/>
      </li>
-     <li id="paymentSectionTitle">
+     <li class="center">
       <h2>
        Payment Information
       </h2>
@@ -332,13 +262,13 @@
       </label>
       <input id="code" name="code" placeholder="1234" required="" type="text"/>
      </li>
-     <li id="address">
-      <label for="billingAddress">
+     <li class="center">
+      <label for="address">
        Billing Address
       </label>
-      <input id="BillingAddress" name="billingAddress" placeholder="1234 S Address Street" required="" type="text"/>
+      <input id="address" name="address" placeholder="1234 S Address Street" required="" type="text"/>
      </li>
-     <li id="submit">
+     <li class="center">
       <input id="submit" type="submit" value="submit"/>
      </li>
     </ul>
