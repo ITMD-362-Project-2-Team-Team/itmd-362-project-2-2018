@@ -16,7 +16,7 @@ template_markers = ['<!-- SEATS-BEGIN -->',
 def generate_html(rows, cols):
     doc, tag, text = Doc().tagtext()
 
-    with tag('li', id='seats'):
+    with tag('li', id='seats', klass='center'):
         with tag('ul'):
 
             for row in rows:  # list of rows
