@@ -41,7 +41,10 @@ article{
 	margin-right:5%;
 }
 form{
+	padding-top:0.6667rem;
 	background-color:#484848;
+	margin-left:5%;
+	margin-right:5%;
 }
 body {
 	line-height: 1;
@@ -102,7 +105,9 @@ nav ul li {
   float: left;
   padding: 0;
 }
-
+a{
+	text-decoration:none;
+}
 nav a {
   width: 100%;
   padding-top: 0.6667rem;/*previously set to 0.6111rem*/
@@ -113,14 +118,19 @@ nav a {
   background-color: #827C46;
 }
 input {
-	box-sizing: border-box; /* ensure padding subtracts from width */	+	padding-right: 0.6111111111rem;
+	box-sizing: border-box; /* ensure padding subtracts from width */
+	/*padding-right: 0.6111111111rem;*/
  	width: 100%;
  	border: 0;
- 	line-height: 1;
+ 	line-height: 2;
 	padding: 0.7222rem; /* {[44px(2*lineheight) - 18px(font)]px / 18} aka 13/18 = 0.72~ */
 	background-color: #e8e8e8;
  }
-
+label{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
 nav a:hover {
   background-color: #B5AD61;
 }
@@ -232,3 +242,8 @@ li#seats > ul > li {
 
   }
 }*/
+
+
+form li {
+    padding-bottom: .61111rem;
+}
