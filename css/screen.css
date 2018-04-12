@@ -209,6 +209,10 @@ form ul li.center {
   text-align: center;
 }
 
+section#receipt * {
+  text-align: center;
+}
+
 li#seats > ul {
   display: flex;
 }
