@@ -41,7 +41,6 @@ article{
 	margin-right:5%;
 }
 form{
-	padding-top:0.6667rem;
 	background-color:#484848;
 	margin-left:5%;
 	margin-right:5%;
@@ -99,11 +98,13 @@ h2 {
 	padding-top: 0.3285em;
   text-align:  center;
 }
-
 nav ul li {
   width: 100%;
   float: left;
   padding: 0;
+	display: table-cell;
+	width: 1%;
+	float: none;
 }
 a{
 	text-decoration:none;
@@ -112,7 +113,7 @@ nav a {
   width: 100%;
   padding-top: 0.6667rem;/*previously set to 0.6111rem*/
   padding-bottom: 0.6667rem;/*previously set to 0.6111rem*/
-  font-size: 2.369rem;/*desktop set this to 1.375*/
+  font-size: 1.375em;/*desktop set this to 1.375*/
   display: block;
   text-align: center;
   background-color: #827C46;
@@ -189,8 +190,8 @@ li#seats > ul > li {
 }
 
 #seats input[type="checkbox"] {
-  width: 1.222rem;
-  height: 1.222rem;
+  width: 2.444rem;
+  height: 2.444rem;
   color: lightblue;
   margin: 0;
   padding: 0;
@@ -206,11 +207,6 @@ li#seats > ul > li {
 /*Media Queries*/
 
 @media screen and (min-width: 640px) {
-  nav ul li {
-    display: table-cell;
-    width: 1%;
-    float: none;
-  }
 	form > * {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -222,6 +218,15 @@ li#seats > ul > li {
 	}
 	form li:nth-child(2n) { /* every even one*/
 	grid-column: 2;
+	}
+	nav a {
+	  width: 100%;
+	  padding-top: 0.6667rem;/*previously set to 0.6111rem*/
+	  padding-bottom: 0.6667rem;/*previously set to 0.6111rem*/
+	  font-size: 2.369rem;/*desktop set this to 1.375*/
+	  display: block;
+	  text-align: center;
+	  background-color: #827C46;
 	}
 }
 /*this following media query breaks the page layout for now, im disabling it until we can figure out how to fix it.
