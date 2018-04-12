@@ -177,6 +177,11 @@ nav a:hover {
 	padding-right: 0.6111111111rem;
 }
 
+#seats, #submit {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
 #seats {
   text-align: center;
 }
