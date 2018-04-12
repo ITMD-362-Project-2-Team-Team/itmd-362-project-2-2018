@@ -201,14 +201,11 @@ nav a:hover {
 	padding-right: 0.6111111111rem;
 }
 
-#seats, #submit, #seatSectionTitle, #theaterInfoTitle, #userInformationTitle, #paymentSectionTitle, #address{
+form ul li.center {
 	grid-column-start: 1;
 	grid-column-end: 3;
 }
-/*#lakeTheaterMovieSelector, #IMAXMovieSelector, #MooLakeTimeSelector, #MooIMAXTimeSelector, #BlartLakeTimeSelector, #LegIMAXTimeSelector{
-	display:contents;
-}*/
-#seats/*, #seatSectionTitle, #theaterInfoTitle, #userInformationTitle, #paymentSectionTitle*/{
+#seats {
   text-align: center;
 }
 
