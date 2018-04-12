@@ -32,6 +32,9 @@
   </h2>
 <form action="book.jsp" method="GET">
     <ul>
+        <li id=userInformationTitle>
+          <h2>User Information</h2>
+        </li>
         <li>
             <label for="name">Username</label>
             <input type="text" name="username" id="name"/>
@@ -48,39 +51,137 @@
             <label for="date">Booking date</label>
             <input id="date" type="date" name="date"/>
         </li>
+        <li id="theaterInfoTitle">
+          <h2>Booking Information</h2>
+        </li>
+        <li id="ListItemMovieSelector">
+            <label for="movieSelection">Movies</label>
+            <select id="MovieSelector" name="movieSelection">
+              <option value=null selected></option>
+              <option value="Moo">Moo!</option>
+              <option value="Blart">Paul Blart Flesh Mall</option>
+              <option value="Leg">I am Leg</option>
+            </select>
+        </li>
+        <li id="TimeSelector">
+            <label for="MovieTimeSelector">Showtimes</label>
+            <select id="MovieTimeSelector" name="MovieTimeSelector">
+              <option value=null selected></option>
+              <option value="time1">11:00 AM</option>
+              <option value="time2">1:00 PM</option>
+              <option value="time3">3:30 PM</option>
+              <option value="time4">7:00 PM</option>
+            </select>
+        </li>
+        <!--<li id="theaterSelector">
+            <label for="theaterSelection">Theater</label>
+            <select id="theaterSelection" name="theaterSelection" required>
+              <option value=null selected></option>
+              <option value="lakeTheater">Lake Theater</option>
+              <option value="navyPierIMAX">Navy Pier IMAX</option>
+            </select>
+        </li>
+        <li id="lakeTheaterMovieSelector">
+            <label for="movieSelectionLakeTheater">Movies at Lake Theater</label>
+            <select id="LakeTheaterMovieSelector" name="movieSelectionLakeTheater">
+              <option value=null selected></option>
+              <option value="Moo">Moo!</option>
+              <option value="Blart">Paul Blart Flesh Mall</option>
+            </select>
+        </li>
+        <li id="IMAXMovieSelector">
+            <label for="IMAXMovies">Movies at Navy Pier IMAX</label>
+            <select id="IMAXMovieSelector" name="IMAXMovies">
+              <option value=null selected></option>
+              <option value="Moo">Moo!</option>
+              <option value="Leg">I am Leg</option>
+            </select>
+        </li>
+        <li id="MooLakeTimeSelector">
+            <label for="MooLakeSelector">Showtimes for Moo!</label>
+            <select id="MooLakeTimeSelector" name="MooLakeSelector">
+              <option value=null selected></option>
+              <option value="time1">12:45 PM</option>
+              <option value="time2">2:00 PM</option>
+              <option value="time3">4:30 PM</option>
+              <option value="time4">7:00 PM</option>
+            </select>
+        </li>
+        <li id="MooIMAXTimeSelector">
+            <label for="MooIMAXSelector">Showtimes for Moo!</label>
+            <select id="MooIMAXTimeSelector" name="MooIMAXSelector">
+              <option value=null selected></option>
+              <option value="time1">11:00 AM</option>
+              <option value="time2">1:00 PM</option>
+              <option value="time3">3:30 PM</option>
+              <option value="time4">7:00 PM</option>
+            </select>
+        </li>
+        <li id="BlartLakeTimeSelector">
+            <label for="BlartLakeSelector">Showtimes for Paul Blart Flesh Mall</label>
+            <select id="BlartTimeSelector" name="BlartLakeSelector">
+              <option value=null selected></option>
+              <option value="time1">12:30 PM</option>
+              <option value="time2">2:30 PM</option>
+              <option value="time3">5:30 PM</option>
+              <option value="time4">8:30 PM</option>
+            </select>
+        </li>
+        <li id="LegIMAXTimeSelector">
+            <label for="LegIMAXSelector">Showtimes for I am Leg</label>
+            <select id="LegTimeSelector" name="LegIMAXSelector">
+              <option value=null selected></option>
+              <option value="time1">10:30 AM</option>
+              <option value="time2">12:30 PM</option>
+              <option value="time3">4:00 PM</option>
+              <option value="time4">8:00 PM</option>
+            </select>
+        </li>-->
+        <!--
         <li>
             <label for="guests">Guests</label>
             <input id="guests" type="number" name="guests"/>
         </li>
+      -->
+      <li id="seatSectionTitle">
+        <h2>Select your desired seats</h2>
+      </li>
         <!-- SEATS-BEGIN -->
         <!-- SEATS-END -->
         <li>
         <label>Your selected seats:</label>
-        <input type="text" id="selected-seats"/>
+        <input type="text" id="selected-seats" text-align=center disabled/>
         </li>
-    <li>
-      <label for="card">Credit Card</label>
-      <input placeholder="1234 5678 9123 4567" type="text" id="card" name="card" />
-    </li>
-    <li>
-      <label for="cardname">Name on Card</label>
-      <input placeholder="Mary Kate" type="text" id="cardname" name="cardname" />
-    </li>
-    <li>
-      <label for="carddate">Expiration Date</label>
-      <input type="text" id="carddate" name="carddate" />
-    </li>
-    <li>
-      <label for="code">Security Code</label>
-      <input placeholder="123" type="text" id="code" name="code" />
-    </li>
-    <li>
-      <label for="price">Price</label>
-      <input type="text" id="price" name="price" disabled/>
-    </li>
-    <li id="submit">
-      <input type="submit" id="submit" value="submit" />
-    </li>
+        <li>
+          <label for="price">Total Price</label>
+          <input type="text" id="price" name="price"  disabled/>
+        </li>
+        <li id="paymentSectionTitle">
+          <h2>Payment Information</h2>
+        </li>
+        <li>
+          <label for="cardname">Name on Card</label>
+          <input placeholder="John Doe" type="text" id="cardname" name="cardname" required/>
+        </li>
+        <li>
+          <label for="card">Credit Card Number</label>
+          <input placeholder="1234567891234567" type="text" id="card" name="card" required/>
+        </li>
+        <li>
+          <label for="carddate">Expiration Date</label>
+          <input type="text" id="carddate" name="carddate" required/>
+        </li>
+        <li>
+          <label for="code">Security Code</label>
+          <input placeholder="1234" type="text" id="code" name="code" required/>
+        </li>
+        <li id="address">
+          <label for="billingAddress">Billing Address</label>
+          <input placeholder="1234 S Address Street" type="text" id="BillingAddress" name="billingAddress" required/>
+        </li>
+        <li id="submit">
+          <input type="submit" id="submit" value="submit"/>
+        </li>
 </ul>
 
 </form>
