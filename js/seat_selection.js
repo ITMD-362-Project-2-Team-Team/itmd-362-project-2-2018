@@ -30,7 +30,7 @@ function countUpCost()
       cost += 500
     })
         
-    outputBox.val('$'+(cost/100))
+    costBox.val('$'+(cost/100))
 
 
 }
