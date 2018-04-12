@@ -13,7 +13,7 @@
 </head>
 <body>
 <nav>
-    <h1 id="titlebar">Welcome to Not AMC Theaters!</h1>
+  <h1 id="titlebar">Welcome to Not AMC Theaters!</h1>
     <ul>
         <li>
             <a href="/">Movies</a>
@@ -26,6 +26,10 @@
         </li>
     </ul>
 </nav>
+<main>
+  <h2>
+    Checkout
+  </h2>
 <form action="book.jsp" method="GET">
     <ul>
         <li>
@@ -50,6 +54,10 @@
         </li>
         <!-- SEATS-BEGIN -->
         <!-- SEATS-END -->
+        <li>
+        <label>Your selected seats:</label>
+        <input type="text" id="selected-seats"/>
+        </li>
     <li>
       <label for="card">Credit Card</label>
       <input placeholder="1234 5678 9123 4567" type="text" id="card" name="card" />
@@ -73,9 +81,9 @@
 
 </form>
 <section>
-	<p>Your selected seats:</p>
-	<input type="text" id="selected-seats"/>
+
 </section>
 
   <script src="/js/seat_selection.js"></script>
+</main>
 </html>

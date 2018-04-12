@@ -9,7 +9,7 @@
   <link href="/css/screen.css" rel="stylesheet"/>
   <!--<link rel="stylesheet" href="/css/debug.css"/>-->
   <link href="//basehold.it/22" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   </script>
  </head>
@@ -36,175 +36,182 @@
     </li>
    </ul>
   </nav>
-  <form action="book.jsp" method="GET">
-   <ul>
-    <li>
-     <label for="name">
-      Username
-     </label>
-     <input id="name" name="username" type="text"/>
-    </li>
-    <li>
-     <label for="email">
-      Email
-     </label>
-     <input id="email" name="email" type="text"/>
-    </li>
-    <li>
-     <label for="phone">
-      Phone
-     </label>
-     <input id="phone" name="phone" type="tel"/>
-    </li>
-    <li>
-     <label for="date">
-      Booking date
-     </label>
-     <input id="date" name="date" type="date"/>
-    </li>
-    <li>
-     <label for="guests">
-      Guests
-     </label>
-     <input id="guests" name="guests" type="number"/>
-    </li>
-    <!-- SEATS-BEGIN -->
-    <li id="seats">
-     <ul>
-      <li id="row-1">
-       <ul>
-        <li>
-         <input name="A1" type="checkbox"/>
-        </li>
-        <li>
-         <input name="B1" type="checkbox"/>
-        </li>
-        <li>
-         <input name="C1" type="checkbox"/>
-        </li>
-        <li>
-         <input name="D1" type="checkbox"/>
-        </li>
-        <li>
-         <input name="E1" type="checkbox"/>
-        </li>
-       </ul>
-      </li>
-      <li id="row-2">
-       <ul>
-        <li>
-         <input name="A2" type="checkbox"/>
-        </li>
-        <li>
-         <input name="B2" type="checkbox"/>
-        </li>
-        <li>
-         <input name="C2" type="checkbox"/>
-        </li>
-        <li>
-         <input name="D2" type="checkbox"/>
-        </li>
-        <li>
-         <input name="E2" type="checkbox"/>
-        </li>
-       </ul>
-      </li>
-      <li id="row-3">
-       <ul>
-        <li>
-         <input name="A3" type="checkbox"/>
-        </li>
-        <li>
-         <input name="B3" type="checkbox"/>
-        </li>
-        <li>
-         <input name="C3" type="checkbox"/>
-        </li>
-        <li>
-         <input name="D3" type="checkbox"/>
-        </li>
-        <li>
-         <input name="E3" type="checkbox"/>
-        </li>
-       </ul>
-      </li>
-      <li id="row-4">
-       <ul>
-        <li>
-         <input name="A4" type="checkbox"/>
-        </li>
-        <li>
-         <input name="B4" type="checkbox"/>
-        </li>
-        <li>
-         <input name="C4" type="checkbox"/>
-        </li>
-        <li>
-         <input name="D4" type="checkbox"/>
-        </li>
-        <li>
-         <input name="E4" type="checkbox"/>
-        </li>
-       </ul>
-      </li>
-      <li id="row-5">
-       <ul>
-        <li>
-         <input name="A5" type="checkbox"/>
-        </li>
-        <li>
-         <input name="B5" type="checkbox"/>
-        </li>
-        <li>
-         <input name="C5" type="checkbox"/>
-        </li>
-        <li>
-         <input name="D5" type="checkbox"/>
-        </li>
-        <li>
-         <input name="E5" type="checkbox"/>
-        </li>
-       </ul>
-      </li>
-     </ul>
-    </li>
-    <!-- SEATS-END -->
-    <li>
-     <label for="card">
-      Credit Card
-     </label>
-     <input id="card" name="card" placeholder="1234 5678 9123 4567" type="text"/>
-    </li>
-    <li>
-     <label for="cardname">
-      Name on Card
-     </label>
-     <input id="cardname" name="cardname" placeholder="Mary Kate" type="text"/>
-    </li>
-    <li>
-     <label for="carddate">
-      Expiration Date
-     </label>
-     <input id="carddate" name="carddate" type="text"/>
-    </li>
-    <li>
-     <label for="code">
-      Security Code
-     </label>
-     <input id="code" name="code" placeholder="123" type="text"/>
-    </li>
-    <li>
-     <input id="submit" type="submit" value="submit"/>
-    </li>
-   </ul>
-  </form>
-  <section>
-   <p>
-    Your selected seats:
-   </p>
-   <input disabled="" id="selected-seats" type="text"/>
-  </section>
-  <script src="/js/seat_selection.js">
-  </script>
+  <main>
+   <h2>
+    Checkout
+   </h2>
+   <form action="book.jsp" method="GET">
+    <ul>
+     <li>
+      <label for="name">
+       Username
+      </label>
+      <input id="name" name="username" type="text"/>
+     </li>
+     <li>
+      <label for="email">
+       Email
+      </label>
+      <input id="email" name="email" type="text"/>
+     </li>
+     <li>
+      <label for="phone">
+       Phone
+      </label>
+      <input id="phone" name="phone" type="tel"/>
+     </li>
+     <li>
+      <label for="date">
+       Booking date
+      </label>
+      <input id="date" name="date" type="date"/>
+     </li>
+     <li>
+      <label for="guests">
+       Guests
+      </label>
+      <input id="guests" name="guests" type="number"/>
+     </li>
+     <!-- SEATS-BEGIN -->
+     <li id="seats">
+      <ul>
+       <li id="row-1">
+        <ul>
+         <li>
+          <input name="A1" type="checkbox"/>
+         </li>
+         <li>
+          <input name="B1" type="checkbox"/>
+         </li>
+         <li>
+          <input name="C1" type="checkbox"/>
+         </li>
+         <li>
+          <input name="D1" type="checkbox"/>
+         </li>
+         <li>
+          <input name="E1" type="checkbox"/>
+         </li>
+        </ul>
+       </li>
+       <li id="row-2">
+        <ul>
+         <li>
+          <input name="A2" type="checkbox"/>
+         </li>
+         <li>
+          <input name="B2" type="checkbox"/>
+         </li>
+         <li>
+          <input name="C2" type="checkbox"/>
+         </li>
+         <li>
+          <input name="D2" type="checkbox"/>
+         </li>
+         <li>
+          <input name="E2" type="checkbox"/>
+         </li>
+        </ul>
+       </li>
+       <li id="row-3">
+        <ul>
+         <li>
+          <input name="A3" type="checkbox"/>
+         </li>
+         <li>
+          <input name="B3" type="checkbox"/>
+         </li>
+         <li>
+          <input name="C3" type="checkbox"/>
+         </li>
+         <li>
+          <input name="D3" type="checkbox"/>
+         </li>
+         <li>
+          <input name="E3" type="checkbox"/>
+         </li>
+        </ul>
+       </li>
+       <li id="row-4">
+        <ul>
+         <li>
+          <input name="A4" type="checkbox"/>
+         </li>
+         <li>
+          <input name="B4" type="checkbox"/>
+         </li>
+         <li>
+          <input name="C4" type="checkbox"/>
+         </li>
+         <li>
+          <input name="D4" type="checkbox"/>
+         </li>
+         <li>
+          <input name="E4" type="checkbox"/>
+         </li>
+        </ul>
+       </li>
+       <li id="row-5">
+        <ul>
+         <li>
+          <input name="A5" type="checkbox"/>
+         </li>
+         <li>
+          <input name="B5" type="checkbox"/>
+         </li>
+         <li>
+          <input name="C5" type="checkbox"/>
+         </li>
+         <li>
+          <input name="D5" type="checkbox"/>
+         </li>
+         <li>
+          <input name="E5" type="checkbox"/>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <!-- SEATS-END -->
+     <li>
+      <label>
+       Your selected seats:
+      </label>
+      <input id="selected-seats" type="text"/>
+     </li>
+     <li>
+      <label for="card">
+       Credit Card
+      </label>
+      <input id="card" name="card" placeholder="1234 5678 9123 4567" type="text"/>
+     </li>
+     <li>
+      <label for="cardname">
+       Name on Card
+      </label>
+      <input id="cardname" name="cardname" placeholder="Mary Kate" type="text"/>
+     </li>
+     <li>
+      <label for="carddate">
+       Expiration Date
+      </label>
+      <input id="carddate" name="carddate" type="text"/>
+     </li>
+     <li>
+      <label for="code">
+       Security Code
+      </label>
+      <input id="code" name="code" placeholder="123" type="text"/>
+     </li>
+     <li>
+      <input id="submit" type="submit" value="submit"/>
+     </li>
+    </ul>
+   </form>
+   <section>
+   </section>
+   <script src="/js/seat_selection.js">
+   </script>
+  </main>
  </body>
 </html>
