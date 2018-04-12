@@ -1,4 +1,10 @@
 print = console.log
+goodies = [
+  'date',
+  'movie',
+  'time'
+]
+
 
 // from https://stackoverflow.com/questions/814613/how-to-read-get-data-from-a-url-using-javascript
 function parseURLParams(url) {
@@ -21,12 +27,43 @@ function parseURLParams(url) {
     return parms;
 }
 
+if (![].includes) {
+  Array.prototype.includes = function(searchElement /*, fromIndex*/ ) {
+    'use strict';
+    var O = Object(this);
+    var len = parseInt(O.length) || 0;
+    if (len === 0) {
+      return false;
+    }
+    var n = parseInt(arguments[1]) || 0;
+    var k;
+    if (n >= 0) {
+      k = n;
+    } else {
+      k = len + n;
+      if (k < 0) {k = 0;}
+    }
+    var currentElement;
+    while (k < len) {
+      currentElement = O[k];
+      if (searchElement === currentElement ||
+         (searchElement !== searchElement && currentElement !== currentElement)) {
+        return true;
+      }
+      k++;
+    }
+    return false;
+  };
+}
+
+
 $(document).ready(function() //when document loads
 {
   url = window.location.href;
   POST = parseURLParams(url);
     
-  seats = []
+  seats = [];
+  cost = 0;
   
   for(var key in POST) //extract list of seats
   {
@@ -42,11 +79,24 @@ $(document).ready(function() //when document loads
   
   for(var key in POST)
   {
-    $('#receipt ul').append(
+    if(goodies.includes(key)) //if it's a key we want
+    {
+      $('#receipt ul#info').append(
+        $('<li>').append(
+          $('<a>').html(key+': '+POST[key])
+        )
+      );
+    }
+  }
+  
+  for(var i in seats)
+  {
+    $('#receipt ul#seats').append(
       $('<li>').append(
-        $('<a>').html(key+': '+POST[key])
+        $('<a>').html(seats[i])
       )
-    )
+    );
+    
   }
   
   
