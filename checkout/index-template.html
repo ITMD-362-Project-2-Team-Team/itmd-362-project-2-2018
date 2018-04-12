@@ -54,7 +54,26 @@
         <li id="theaterInfoTitle">
           <h2>Booking Information</h2>
         </li>
-        <li id="theaterSelector">
+        <li id="ListItemMovieSelector">
+            <label for="movieSelection">Movies</label>
+            <select id="MovieSelector" name="movieSelection">
+              <option value=null selected></option>
+              <option value="Moo">Moo!</option>
+              <option value="Blart">Paul Blart Flesh Mall</option>
+              <option value="Leg">I am Leg</option>
+            </select>
+        </li>
+        <li id="TimeSelector">
+            <label for="MovieTimeSelector">Showtimes</label>
+            <select id="MovieTimeSelector" name="MovieTimeSelector">
+              <option value=null selected></option>
+              <option value="time1">11:00 AM</option>
+              <option value="time2">1:00 PM</option>
+              <option value="time3">3:30 PM</option>
+              <option value="time4">7:00 PM</option>
+            </select>
+        </li>
+        <!--<li id="theaterSelector">
             <label for="theaterSelection">Theater</label>
             <select id="theaterSelection" name="theaterSelection" required>
               <option value=null selected></option>
@@ -117,7 +136,7 @@
               <option value="time3">4:00 PM</option>
               <option value="time4">8:00 PM</option>
             </select>
-        </li>
+        </li>-->
         <!--
         <li>
             <label for="guests">Guests</label>
@@ -146,7 +165,7 @@
         </li>
         <li>
           <label for="card">Credit Card Number</label>
-          <input placeholder="1234 5678 91234567" type="text" id="card" name="card" required/>
+          <input placeholder="1234567891234567" type="text" id="card" name="card" required/>
         </li>
         <li>
           <label for="carddate">Expiration Date</label>
@@ -156,7 +175,7 @@
           <label for="code">Security Code</label>
           <input placeholder="1234" type="text" id="code" name="code" required/>
         </li>
-        <li>
+        <li id="address">
           <label for="billingAddress">Billing Address</label>
           <input placeholder="1234 S Address Street" type="text" id="BillingAddress" name="billingAddress" required/>
         </li>

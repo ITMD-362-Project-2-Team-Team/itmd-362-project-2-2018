@@ -147,6 +147,7 @@ label{
 	width: 100%;
 	display: inline-block;
 	text-align: center;
+	padding-bottom:0.5rem;
 }
 nav a:hover {
   background-color: #B5AD61;
@@ -200,13 +201,13 @@ nav a:hover {
 	padding-right: 0.6111111111rem;
 }
 
-#seats, #submit, #seatSectionTitle, #theaterInfoTitle, #userInformationTitle, #paymentSectionTitle, #billingAddress{
+#seats, #submit, #seatSectionTitle, #theaterInfoTitle, #userInformationTitle, #paymentSectionTitle, #address{
 	grid-column-start: 1;
 	grid-column-end: 3;
 }
-#lakeTheaterMovieSelector, #IMAXMovieSelector, #MooLakeTimeSelector, #MooIMAXTimeSelector, #BlartLakeTimeSelector, #LegIMAXTimeSelector{
-	display:none;
-}
+/*#lakeTheaterMovieSelector, #IMAXMovieSelector, #MooLakeTimeSelector, #MooIMAXTimeSelector, #BlartLakeTimeSelector, #LegIMAXTimeSelector{
+	display:contents;
+}*/
 #seats/*, #seatSectionTitle, #theaterInfoTitle, #userInformationTitle, #paymentSectionTitle*/{
   text-align: center;
 }
