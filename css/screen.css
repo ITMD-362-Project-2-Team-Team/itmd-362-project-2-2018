@@ -36,7 +36,12 @@ footer, header, hgroup, menu, nav, section {
 	background-color:red;
 }*/
 article{
-	background-color:green;
+	background-color:#484848;
+	margin-left:5%;
+	margin-right:5%;
+}
+form{
+	background-color:#484848;
 }
 body {
 	line-height: 1;
@@ -66,7 +71,7 @@ table {
 html {
   font-size: 1.125em;  /* 18px / 16pt = 1.125 */
   line-height: 1.222em;  /* 22pt / 18em = 1.2~ */
-	background-color:#303030;
+	background-color:#7D0400;
 }
 
 figure {
@@ -103,7 +108,7 @@ nav a {
   font-size: 2.369rem;/*desktop set this to 1.375*/
   display: block;
   text-align: center;
-  background-color: orange;
+  background-color: #cbc26d;
 }
 input {
 	box-sizing: border-box; /* ensure padding subtracts from width */	+	padding-right: 0.6111111111rem;
@@ -118,13 +123,8 @@ nav a:hover {
   background-color: red;
 }
 
-.MovieDescription{
-	padding-left: 0.6111111111rem;
-	padding-right: 0.6111111111rem;
-}
-
 #titlebar{
-	background-color:#212121;
+	background-color:#1b1b1b;
 }
 
 #movie-list {
@@ -153,12 +153,15 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr 99fr;
   grid-template-rows: auto;
+	background-color:#484848;
 }
 
 
 #movie-list aside {
   grid-column: 2;
   grid-row: 2;
+	padding-left: 0.6111111111rem;
+	padding-right: 0.6111111111rem;
 }
 
 #seats {
