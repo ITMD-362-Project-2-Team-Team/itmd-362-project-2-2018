@@ -21,7 +21,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: 'Roboto Slab', serif;
 	vertical-align: baseline;
 	color:#ffffff;
 }
@@ -111,7 +111,7 @@ input {
  	border: 0;
  	line-height: 1;
 	padding: 0.7222rem; /* {[44px(2*lineheight) - 18px(font)]px / 18} aka 13/18 = 0.72~ */
-	background-color: #e8e8e8;	
+	background-color: #e8e8e8;
  }
 
 nav a:hover {
