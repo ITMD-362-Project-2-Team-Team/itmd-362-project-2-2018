@@ -42,6 +42,11 @@
    </h2>
    <form action="book.jsp" method="GET">
     <ul>
+     <li id="userInformationTitle">
+      <h2>
+       User Information
+      </h2>
+     </li>
      <li>
       <label for="name">
        Username
@@ -66,11 +71,150 @@
       </label>
       <input id="date" name="date" type="date"/>
      </li>
-     <li>
-      <label for="guests">
-       Guests
+     <li id="theaterInfoTitle">
+      <h2>
+       Booking Information
+      </h2>
+     </li>
+     <li id="theaterSelector">
+      <label for="theaterSelection">
+       Theater
       </label>
-      <input id="guests" name="guests" type="number"/>
+      <select id="theaterSelection" name="theaterSelection" required="">
+       <option selected="" value="null">
+       </option>
+       <option value="lakeTheater">
+        Lake Theater
+       </option>
+       <option value="navyPierIMAX">
+        Navy Pier IMAX
+       </option>
+      </select>
+     </li>
+     <li id="lakeTheaterMovieSelector">
+      <label for="movieSelectionLakeTheater">
+       Movies at Lake Theater
+      </label>
+      <select id="LakeTheaterMovieSelector" name="movieSelectionLakeTheater">
+       <option selected="" value="null">
+       </option>
+       <option value="Moo">
+        Moo!
+       </option>
+       <option value="Blart">
+        Paul Blart Flesh Mall
+       </option>
+      </select>
+     </li>
+     <li id="IMAXMovieSelector">
+      <label for="IMAXMovies">
+       Movies at Navy Pier IMAX
+      </label>
+      <select id="IMAXMovieSelector" name="IMAXMovies">
+       <option selected="" value="null">
+       </option>
+       <option value="Moo">
+        Moo!
+       </option>
+       <option value="Leg">
+        I am Leg
+       </option>
+      </select>
+     </li>
+     <li id="MooLakeTimeSelector">
+      <label for="MooLakeSelector">
+       Showtimes for Moo!
+      </label>
+      <select id="MooLakeTimeSelector" name="MooLakeSelector">
+       <option selected="" value="null">
+       </option>
+       <option value="time1">
+        12:45 PM
+       </option>
+       <option value="time2">
+        2:00 PM
+       </option>
+       <option value="time3">
+        4:30 PM
+       </option>
+       <option value="time4">
+        7:00 PM
+       </option>
+      </select>
+     </li>
+     <li id="MooIMAXTimeSelector">
+      <label for="MooIMAXSelector">
+       Showtimes for Moo!
+      </label>
+      <select id="MooIMAXTimeSelector" name="MooIMAXSelector">
+       <option selected="" value="null">
+       </option>
+       <option value="time1">
+        11:00 AM
+       </option>
+       <option value="time2">
+        1:00 PM
+       </option>
+       <option value="time3">
+        3:30 PM
+       </option>
+       <option value="time4">
+        7:00 PM
+       </option>
+      </select>
+     </li>
+     <li id="BlartLakeTimeSelector">
+      <label for="BlartLakeSelector">
+       Showtimes for Paul Blart Flesh Mall
+      </label>
+      <select id="BlartTimeSelector" name="BlartLakeSelector">
+       <option selected="" value="null">
+       </option>
+       <option value="time1">
+        12:30 PM
+       </option>
+       <option value="time2">
+        2:30 PM
+       </option>
+       <option value="time3">
+        5:30 PM
+       </option>
+       <option value="time4">
+        8:30 PM
+       </option>
+      </select>
+     </li>
+     <li id="LegIMAXTimeSelector">
+      <label for="LegIMAXSelector">
+       Showtimes for I am Leg
+      </label>
+      <select id="LegTimeSelector" name="LegIMAXSelector">
+       <option selected="" value="null">
+       </option>
+       <option value="time1">
+        10:30 AM
+       </option>
+       <option value="time2">
+        12:30 PM
+       </option>
+       <option value="time3">
+        4:00 PM
+       </option>
+       <option value="time4">
+        8:00 PM
+       </option>
+      </select>
+     </li>
+     <!--
+        <li>
+            <label for="guests">Guests</label>
+            <input id="guests" type="number" name="guests"/>
+        </li>
+      -->
+     <li id="seatSectionTitle">
+      <h2>
+       Select your desired seats
+      </h2>
      </li>
      <!-- SEATS-BEGIN -->
      <li id="seats">
@@ -177,7 +321,7 @@
       <label>
        Your selected seats:
       </label>
-      <input id="selected-seats" type="text"/>
+      <input disabled="" id="selected-seats" text-align="center" type="text"/>
      </li>
      <li>
       <label for="price">
@@ -185,29 +329,40 @@
       </label>
       <input disabled="" id="price" name="price" type="text"/>
      </li>
+     <li id="paymentSectionTitle">
+      <h2>
+       Payment Information
+      </h2>
+     </li>
      <li>
       <label for="card">
        Credit Card
       </label>
-      <input id="card" name="card" placeholder="1234 5678 9123 4567" type="text"/>
+      <input id="card" name="card" placeholder="1234 5678 91234567" required="" type="text"/>
      </li>
      <li>
       <label for="cardname">
        Name on Card
       </label>
-      <input id="cardname" name="cardname" placeholder="Mary Kate" type="text"/>
+      <input id="cardname" name="cardname" placeholder="John Doe" required="" type="text"/>
      </li>
      <li>
       <label for="carddate">
        Expiration Date
       </label>
-      <input id="carddate" name="carddate" type="text"/>
+      <input id="carddate" name="carddate" required="" type="text"/>
      </li>
      <li>
       <label for="code">
        Security Code
       </label>
-      <input id="code" name="code" placeholder="123" type="text"/>
+      <input id="code" name="code" placeholder="1234" required="" type="text"/>
+     </li>
+     <li>
+      <label for="billingAddress">
+       Billing Address
+      </label>
+      <input id="BillingAddress" name="billingAddress" placeholder="1234 S Address Street" required="" type="text"/>
      </li>
      <li id="submit">
       <input id="submit" type="submit" value="submit"/>

@@ -41,9 +41,13 @@ article{
 	margin-right:5%;
 }
 form{
+	padding-top:0.6667rem;
 	background-color:#484848;
 	margin-left:5%;
 	margin-right:5%;
+}
+form li {
+  padding-bottom: .61111rem;
 }
 body {
 	line-height: 1;
@@ -95,8 +99,9 @@ h2 {
   font-size: 1.777em; /* 31.984 / 18 = 1.777 */
   line-height: 1.032em; /* 33 / 31.984 = 1.032 */
   padding-bottom: 0.3285em;
-	padding-top: 0.3285em;
+  padding-top: 0.3285em;
   text-align:  center;
+  /* display: none; */
 }
 nav ul li {
   width: 100%;
@@ -121,12 +126,23 @@ nav a {
 input {
 	box-sizing: border-box; /* ensure padding subtracts from width */
 	/*padding-right: 0.6111111111rem;*/
- 	width: 100%;
- 	border: 0;
- 	line-height: 2;
+	width: 100%;
+	border: 0;
+	/* line-height: 2; */
 	padding: 0.7222rem; /* {[44px(2*lineheight) - 18px(font)]px / 18} aka 13/18 = 0.72~ */
 	background-color: #e8e8e8;
- }
+	font-size: 1.325em;
+	}
+select {
+	box-sizing: border-box; /* ensure padding subtracts from width */
+	/*padding-right: 0.6111111111rem;*/
+	width: 100%;
+	border: 0;
+	/* line-height: 2; */
+	padding: 0.7222rem; /* {[44px(2*lineheight) - 18px(font)]px / 18} aka 13/18 = 0.72~ */
+	background-color: #e8e8e8;
+	font-size: 1.325em;
+	}
 label{
 	width: 100%;
 	display: inline-block;
@@ -136,6 +152,14 @@ nav a:hover {
   background-color: #B5AD61;
 }
 
+/*IDs List*/
+
+#selected-seats{
+	text-align:center;
+}
+#price{
+	text-align:center;
+}
 #titlebar{
 	background-color:#1b1b1b;
 }
@@ -169,7 +193,6 @@ nav a:hover {
 	background-color:#484848;
 }
 
-
 #movie-list aside {
   grid-column: 2;
   grid-row: 2;
@@ -177,12 +200,14 @@ nav a:hover {
 	padding-right: 0.6111111111rem;
 }
 
-#seats, #submit {
+#seats, #submit, #seatSectionTitle, #theaterInfoTitle, #userInformationTitle, #paymentSectionTitle, #billingAddress{
 	grid-column-start: 1;
 	grid-column-end: 3;
 }
-
-#seats {
+#lakeTheaterMovieSelector, #IMAXMovieSelector, #MooLakeTimeSelector, #MooIMAXTimeSelector, #BlartLakeTimeSelector, #LegIMAXTimeSelector{
+	display:none;
+}
+#seats/*, #seatSectionTitle, #theaterInfoTitle, #userInformationTitle, #paymentSectionTitle*/{
   text-align: center;
 }
 
@@ -219,10 +244,10 @@ li#seats > ul > li {
 	grid-row-gap: 1rem;
 	}
 	form li:nth-child(2n + 1) { /* every odd one*/
-	grid-column: 1;
+	grid-column: auto;/*Original setting was 1.  I found doing this makes the layout nicer if we go with titling each section.*/
 	}
 	form li:nth-child(2n) { /* every even one*/
-	grid-column: 2;
+	grid-column: auto;/*Original setting was 2.  I found doing this makes the layout nicer if we go with titling each section.*/
 	}
 	nav a {
 	  width: 100%;
@@ -234,6 +259,7 @@ li#seats > ul > li {
 	  background-color: #827C46;
 	}
 }
+
 /*this following media query breaks the page layout for now, im disabling it until we can figure out how to fix it.
 /*@media screen and (min-width: 1200px) {
   #movie-list article:nth-of-type(2n) {
@@ -252,8 +278,3 @@ li#seats > ul > li {
 
   }
 }*/
-
-
-form li {
-    padding-bottom: .61111rem;
-}
