@@ -105,6 +105,14 @@ nav a {
   text-align: center;
   background-color: orange;
 }
+input {
+	box-sizing: border-box; /* ensure padding subtracts from width */	+	padding-right: 0.6111111111rem;
+ 	width: 100%;
+ 	border: 0;
+ 	line-height: 1;
+	padding: 0.7222rem; /* {[44px(2*lineheight) - 18px(font)]px / 18} aka 13/18 = 0.72~ */
+	background-color: #e8e8e8;	
+ }
 
 nav a:hover {
   background-color: red;
@@ -188,7 +196,18 @@ li#seats > ul > li {
     width: 1%;
     float: none;
   }
-
+	form > * {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+	}
+	form li:nth-child(2n + 1) { /* every odd one*/
+	grid-column: 1;
+	}
+	form li:nth-child(2n) { /* every even one*/
+	grid-column: 2;
+	}
 }
 /*this following media query breaks the page layout for now, im disabling it until we can figure out how to fix it.
 /*@media screen and (min-width: 1200px) {
