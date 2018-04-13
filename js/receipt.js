@@ -6,6 +6,11 @@ goodies = [
 ]
 
 
+function titleCase(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+
 // from https://stackoverflow.com/questions/814613/how-to-read-get-data-from-a-url-using-javascript
 function parseURLParams(url) {
     var queryStart = url.indexOf("?") + 1,
@@ -81,9 +86,12 @@ $(document).ready(function() //when document loads
   {
     if(goodies.includes(key)) //if it's a key we want
     {
+	  var k = key;
+	  k = titleCase(k);
+	  
       $('#receipt ul#info').append(
         $('<li>').append(
-          $('<a>').html(key+': '+POST[key])
+          $('<a>').html(k+': '+POST[key])
         )
       );
     }
