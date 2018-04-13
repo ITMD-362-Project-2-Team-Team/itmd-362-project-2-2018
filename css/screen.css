@@ -205,6 +205,12 @@ form ul li.center {
 	grid-column-start: 1;
 	grid-column-end: 3;
 }
+
+footer {
+    font-size: 0.6111rem;
+    padding-left: 1.222rem;
+}
+
 #seats {
   text-align: center;
 }
